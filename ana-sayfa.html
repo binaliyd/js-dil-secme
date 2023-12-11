@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>FIXERYACHT | Home</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <meta name="description"
+        content="FIXERYACHT, uzman ekibi ve deneyimiyle, yat tamiratlarınızı güvenilir bir şekilde gerçekleştiriyor. Deniz araçlarınızın bakımı, onarımı ve restorasyonu konusundaki ihtiyaçlarınıza özel çözümler sunuyoruz. Teknolojiye dayalı yaklaşımımızla, yatlarınızı en yüksek standartlarda tamir ediyor ve özgün tasarımlarıyla öne çıkıyoruz. FIXERYACHT, denizcilik tutkunlarına mükemmel bir tamirat deneyimi vaat ediyor.">
+    <meta name="keywords"
+        content="FIXERYACHT, yat tamiratı, deniz aracı bakımı, yat restorasyonu, denizcilik hizmetleri, teknik destek, İstanbul yat tamiri, profesyonel yat bakımı, tekne onarımı, deniz aracı restore, İstanbul denizcilik, özel yat tamiri">
+    <!-- Open Graph Protocol Meta Etiketleri -->
+    <meta property="og:title" content="FIXERYACHT İstanbul - Yat Tamir ve Bakım">
+    <meta property="og:description"
+        content="İstanbul'da denizcilik sektöründe öncü tamir ve bakım hizmetleri sunan FIXERYACHT. Yatlarınızı güvenle tamir ediyor ve bakımını gerçekleştiriyoruz.">
+    <meta property="og:image" content="feature.png"> <!-- FIXERYACHT'ın öne çıkan bir görseli -->
+    <meta property="og:url" content="https://www.fixeryacht.com">
+    <meta property="og:type" content="website">
+    <!-- HTML sayfasında önbellek başlıkları -->
+    <meta http-equiv="Cache-Control" content="public, max-age=2592000">
+    <meta http-equiv="Expires" content="Mon, 1 Jan 2023 00:00:00 GMT">
+
+
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+  
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Custom styles for the footer */
+        .footer {
+            background-image: url('img/footer.png');
+            /* Görüntü dosyasının URL'sini buraya ekleyin */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            backdrop-filter: blur(8px);
+            /* Blur miktarını istediğiniz değere ayarlayın */
+            -webkit-backdrop-filter: blur(15px);
+            /* WebKit tabanlı tarayıcılarda da destek ekleyin */
+        }
+
+
+        .btn-outline-light {
+            color: white;
+            border-color: white;
+        }
+
+        .btn-outline-light:hover {
+            color: black;
+            /* Hover rengini dilediğiniz bir renk olarak ayarlayabilirsiniz */
+            background-color: white;
+        }
+
+        .bolge {
+      position: relative;
+      display: inline-block;
+    }
+
+    .bolge-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: brightness(20%); /* Görüntüyü karartma */
+    }
+
+    .yazi {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff; /* Yazı rengi */
+      font-size: 24px; /* Yazı boyutu, isteğe bağlı */
+      text-align: center;
+      font-family: 'Arial', sans-serif; /* Yazı tipi, isteğe bağlı */
+    }
+      
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        style="background-color: #2B3892;">
+        <div class="spinner-grow " style="width: 3rem; height: 3rem; color: #51ADE5;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow border-top border-5 border-info sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+          <img src="img/logo.png" height="85" width="85" alt="">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" id="homeLink" class="nav-item nav-link active" onclick="changeLanguage(selectedLanguage)">Home</a>
+            <a href="about.html" id="aboutLink" class="nav-item nav-link" onclick="changeLanguage(selectedLanguage)">About</a>
+            <a href="service.html" id="servicesLink" class="nav-item nav-link" onclick="changeLanguage(selectedLanguage)">Services</a>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              Language
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+              <li><a id="englishBtn" class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+              <li><a id="turkishBtn" class="dropdown-item" href="#" onclick="changeLanguage('tr')">Türkçe</a></li>
+              <li><a id="frenchBtn" class="dropdown-item" href="#" onclick="changeLanguage('fr')">Français</a></li>
+            </ul>
+          </div>
+          <a href="contact.html" id="contactLink" class="nav-item nav-link" onclick="changeLanguage(selectedLanguage)">+90 555 555 55 55</a>
+        </div>
+      </nav>
+
+      <script>
+        var languageTexts = {
+          "en": { "language": "Language", "english": "English", "turkish": "Türkçe", "french": "Français" },
+          "tr": { "language": "Dil", "english": "İngilizce", "turkish": "Türkçe", "french": "Fransızca" },
+          "fr": { "language": "Langue", "english": "Anglais", "turkish": "Turc", "french": "Français" }
+        };
+    
+        var selectedLanguage = "en";
+    
+        function changeLanguage(lang) {
+          selectedLanguage = lang;
+          updateTexts();
+        }
+    
+        function updateTexts() {
+          document.getElementById("languageDropdown").innerText = languageTexts[selectedLanguage]["language"];
+          document.getElementById("englishBtn").innerText = languageTexts[selectedLanguage]["english"];
+          document.getElementById("turkishBtn").innerText = languageTexts[selectedLanguage]["turkish"];
+          document.getElementById("frenchBtn").innerText = languageTexts[selectedLanguage]["french"];
+        }
+      </script>
+
+    
+    
+
+
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative mb-5">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousell-1.png" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 id="Yatlar" class="text-white text-uppercase mb-3 animated slideInDown">YATLAR</h5>
+                                <h1 id="Yatlar1" class="display-3 text-white animated slideInDown mb-4">#1 Place For Your <span
+                                        class="" style="color: #51ADE5;">Logistics</span> Solution</h1>
+                                <p id="Yatlar2" class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor
+                                    at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea
+                                    elitr.</p>
+                                <a id="Yatlar3" href="" class="btn  py-md-3 px-md-5 me-3 animated slideInLeft"
+                                    style="background-color: #2B3892; color: white;">Read More</a>
+                                <a id="Yatlar4" href="" class="btn  py-md-3 px-md-5 animated slideInRight"
+                                    style="background-color: #51ADE5; color: white;">Free Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousell-2.png" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Transport & Logistics
+                                    Solution</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">#1 Place For Your <span
+                                        class="" style="color: #51ADE5;">Transport</span> Solution</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor
+                                    at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea
+                                    elitr.</p>
+                                <a href="" class="btn  py-md-3 px-md-5 me-3 animated slideInLeft"
+                                    style="background-color: #51ADE5; color: white;">Read More</a>
+                                <a href="" class="btn  py-md-3 px-md-5 animated slideInRight"
+                                    style="background-color: #2B3892; color: white;">Free Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var languageTexts = {
+      "en": {
+        "Yatlar": "About Us",
+        "Yatlar1": "Quick Transport and Logistics Solutions",
+        "Yatlar2": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+        "Yatlar3": "Global Coverage",
+        "Yatlar4": "On Time Delivery",
+      },
+      "tr": {
+        "Yatlar": "Hakkımızda",
+        "Yatlar1": "Hızlı Taşıma ve Lojistik Çözümleri",
+        "Yatlar2": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+        "Yatlar3": "Global Kapsama",
+        "Yatlar4": "Zamanında Teslimat",
+      },
+      "fr": {
+        "Yatlar": "À propos de nous",
+        "Yatlar1": "Solutions rapides de transport et de logistique",
+        "Yatlar2": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+        "Yatlar3": "Couverture mondiale",
+        "Yatlar4": "Livraison à temps",
+      }
+    };
+
+    var selectedLanguage = "en";
+
+    function changeLanguage(lang) {
+      selectedLanguage = lang;
+      updateTexts();
+    }
+
+    function updateTexts() {
+      document.getElementById("Yatlar").innerText = languageTexts[selectedLanguage]["Yatlar"];
+      document.getElementById("Yatlar").innerText = languageTexts[selectedLanguage]["Yatlar1"];
+      document.getElementById("Yatlar").innerText = languageTexts[selectedLanguage]["Yatlar2"];
+      document.getElementById("Yatlar").innerText = languageTexts[selectedLanguage]["Yatlar3"];
+      document.getElementById("Yatlar").innerText = languageTexts[selectedLanguage]["Yatlar4"];
+    }
+      </script>
+
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container about py-5 px-lg-0">
+          <div class="row g-5 mx-lg-0">
+            <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
+              <div class="position-relative h-100">
+                <img class="position-absolute img-fluid w-100 h-100" src="img/about.png" style="object-fit: cover;" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+              <h6 id="aboutText" class="text-uppercase mb-3 headline">Hakkımızda</h6>
+              <h1 id="headline" class="mb-5">Hızlı Taşıma ve Lojistik Çözümleri</h1>
+              <p id="paragraph" class="mb-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+              <div class="row g-4 mb-5">
+                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                  <i class="fa fa-globe fa-3x mb-3" style="color: #2B3892;"></i>
+                  <h5 id="globalCoverage">Global Kapsama</h5>
+                  <p class="m-0"></p>
+                </div>
+                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                  <i class="fa fa-shipping-fast fa-3x  mb-3" style="color: #2B3892;"></i>
+                  <h5 id="onTimeDelivery">Zamanında Teslimat</h5>
+                  <p class="m-0"></p>
+                </div>
+              </div>
+              <a href="" class="btn btn-primary py-3 px-5" id="exploreMore">Daha Fazla Keşfet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        var languageTexts = {
+      "en": {
+        "about": "About Us",
+        "headline": "Quick Transport and Logistics Solutions",
+        "paragraph": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+        "globalCoverage": "Global Coverage",
+        "onTimeDelivery": "On Time Delivery",
+        "exploreMore": "Explore More"
+      },
+      "tr": {
+        "about": "Hakkımızda",
+        "headline": "Hızlı Taşıma ve Lojistik Çözümleri",
+        "paragraph": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+        "globalCoverage": "Global Kapsama",
+        "onTimeDelivery": "Zamanında Teslimat",
+        "exploreMore": "Daha Fazla Keşfet"
+      },
+      "fr": {
+        "about": "À propos de nous",
+        "headline": "Solutions rapides de transport et de logistique",
+        "paragraph": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+        "globalCoverage": "Couverture mondiale",
+        "onTimeDelivery": "Livraison à temps",
+        "exploreMore": "Explorer plus"
+      }
+    };
+
+    var selectedLanguage = "en";
+
+    function changeLanguage(lang) {
+      selectedLanguage = lang;
+      updateTexts();
+    }
+
+    function updateTexts() {
+      document.getElementById("aboutText").innerText = languageTexts[selectedLanguage]["about"];
+      document.getElementById("headline").innerText = languageTexts[selectedLanguage]["headline"];
+      document.getElementById("paragraph").innerText = languageTexts[selectedLanguage]["paragraph"];
+      document.getElementById("globalCoverage").innerText = languageTexts[selectedLanguage]["globalCoverage"];
+      document.getElementById("onTimeDelivery").innerText = languageTexts[selectedLanguage]["onTimeDelivery"];
+      document.getElementById("exploreMore").innerText = languageTexts[selectedLanguage]["exploreMore"];
+    }
+      </script>
+
+    <!-- Fact Start -->
+    <div id="hakkimizda" class="container-xxl py-5">
+        <div class="container py-5">
+          <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+              <h6 id="someFacts" class="text-uppercase mb-3 headline" style="font-size: 1.5rem;">Bazı Gerçekler</h6>
+              <p id="paragraph" class="mb-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+              <div class="d-flex align-items-center">
+                <i class="fa fa-headphones fa-2x flex-shrink-0 p-3 text-white" style="background-color: #2B3892;"></i>
+                <div class="ps-4">
+                  <h6 id="callQuery">Herhangi bir soru için arayın!</h6>
+                  <h3 class=" m-0" style="color: #2B3892;" id="phoneNumber">+012 345 6789</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row g-4 align-items-center">
+                <div class="col-sm-6">
+                  <div class=" p-4 mb-4 wow fadeIn" style="background-color: #51ADE5;" data-wow-delay="0.3s">
+                    <i class="fa fa-users fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0" id="happyClients">Mutlu Müşteriler</p>
+                  </div>
+                  <div class="bg-secondary p-4 wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-ship fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0" id="completeShipments">Tamamlanan Gönderiler</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class=" p-4 wow fadeIn" style="background-color: #2B3892;" data-wow-delay="0.7s">
+                    <i class="fa fa-star fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0" id="customerReviews">Müşteri Yorumları</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        var languageTexts = {
+          "en": {
+            "someFacts": "Some Facts",
+            "paragraph": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+            "callQuery": "Call for any query!",
+            "phoneNumber": "+012 345 6789",
+            "happyClients": "Happy Clients",
+            "completeShipments": "Complete Shipments",
+            "customerReviews": "Customer Reviews"
+          },
+          "tr": {
+            "someFacts": "Bazı Gerçekler",
+            "paragraph": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+            "callQuery": "Herhangi bir soru için arayın!",
+            "phoneNumber": "+012 345 6789",
+            "happyClients": "Mutlu Müşteriler",
+            "completeShipments": "Tamamlanan Gönderiler",
+            "customerReviews": "Müşteri Yorumları"
+          },
+          "fr": {
+            "someFacts": "Quelques faits",
+            "paragraph": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+            "callQuery": "Appelez pour toute question !",
+            "phoneNumber": "+012 345 6789",
+            "happyClients": "Clients Satisfaits",
+            "completeShipments": "Expéditions Complètes",
+            "customerReviews": "Avis Clients"
+          }
+        };
+    
+        var selectedLanguage = "en";
+    
+        function changeLanguage(lang) {
+          selectedLanguage = lang;
+          updateTexts();
+        }
+    
+        function updateTexts() {
+          document.getElementById("someFacts").innerText = languageTexts[selectedLanguage]["someFacts"];
+          document.getElementById("paragraph").innerText = languageTexts[selectedLanguage]["paragraph"];
+          document.getElementById("callQuery").innerText = languageTexts[selectedLanguage]["callQuery"];
+          document.getElementById("phoneNumber").innerText = languageTexts[selectedLanguage]["phoneNumber"];
+          document.getElementById("happyClients").innerText = languageTexts[selectedLanguage]["happyClients"];
+          document.getElementById("completeShipments").innerText = languageTexts[selectedLanguage]["completeShipments"];
+          document.getElementById("customerReviews").innerText = languageTexts[selectedLanguage]["customerReviews"];
+        }
+      </script>
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class=" text-uppercase" style="color: #51ADE5;">Our Services</h6>
+                <h1 class="mb-5">Explore Our Services</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Air Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Ocean Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Road Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/service-4.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Train Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/service-5.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Customs Clearance</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/service-6.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Warehouse Solutions</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container feature py-5 px-lg-0">
+          <div class="row g-5 mx-lg-0">
+            <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
+              <h6 id="ourFeatures" class="text-uppercase mb-3 headline">Özelliklerimiz</h6>
+              <h1 id="hertz" class="mb-5">1990'dan Beri Güvenilir Lojistik Şirketiyiz</h1>
+              <div class="d-flex mb-5 wow fadeInUp" data-wow-delay="0.3s">
+                <i class="fa fa-globe  fa-3x flex-shrink-0" style="color: #2B3892;"></i>
+                <div class="ms-4">
+                  <h5 id="worldwideServiceTitle">Dünya Çapında Hizmet</h5>
+                  <p class="mb-0" id="worldwideServiceDesc">Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet</p>
+                </div>
+              </div>
+              <div class="d-flex mb-5 wow fadeIn" data-wow-delay="0.5s">
+                <i class="fa fa-shipping-fast  fa-3x flex-shrink-0" style="color: #2B3892;"></i>
+                <div class="ms-4">
+                  <h5 id="onTimeDeliveryTitle">Zamanında Teslimat</h5>
+                  <p class="mb-0" id="onTimeDeliveryDesc">Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet</p>
+                </div>
+              </div>
+              <div class="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
+                <i class="fa fa-headphones  fa-3x flex-shrink-0" style="color: #2B3892;"></i>
+                <div class="ms-4">
+                  <h5 id="telephoneSupportTitle">24/7 Telefon Desteği</h5>
+                  <p class="mb-0" id="telephoneSupportDesc">Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s" style="min-height: 400px;">
+              <div class="position-relative h-100">
+                <img class="position-absolute img-fluid w-100 h-100" src="img/feature.png" style="object-fit: cover;" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Diğer sayfa içeriği -->
+
+      <script>
+        var languageTexts = {
+          "en": {
+            "ourFeatures": "Our Features",
+            "hertz": "We Are Trusted Logistics Company Since 1990",
+            "worldwideService": {
+              "title": "Worldwide Service",
+              "description": "Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet"
+            },
+            "onTimeDelivery": {
+              "title": "On Time Delivery",
+              "description": "Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet"
+            },
+            "telephoneSupport": {
+              "title": "24/7 Telephone Support",
+              "description": "Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet"
+            }
+          },
+          "tr": {
+            "ourFeatures": "Özelliklerimiz",
+            "hertz": "1990'dan Beri Güvenilir Lojistik Şirketiyiz",
+            "worldwideService": {
+              "title": "Dünya Çapında Hizmet",
+              "description": "Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet"
+            },
+            "onTimeDelivery": {
+              "title": "Zamanında Teslimat",
+              "description": "Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet"
+            },
+            "telephoneSupport": {
+              "title": "24/7 Telefon Desteği",
+              "description": "Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet"
+            }
+          },
+          "fr": {
+            "ourFeatures": "Nos fonctionnalités",
+            "hertz": "Nous sommes une entreprise de logistique de confiance depuis 1990",
+            "worldwideService": {
+              "title": "Service Mondial",
+              "description": "Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet"
+            },
+            "onTimeDelivery": {
+              "title": "Livraison à temps",
+              "description": "Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet"
+            },
+            "telephoneSupport": {
+              "title": "Support Téléphonique 24/7",
+              "description": "Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet"
+            }
+          }
+        };
+    
+        var selectedLanguage = "en";
+    
+        function changeLanguage(lang) {
+          selectedLanguage = lang;
+          updateTexts();
+        }
+    
+        function updateTexts() {
+          document.getElementById("ourFeatures").innerText = languageTexts[selectedLanguage]["ourFeatures"];
+          document.getElementById("hertz").innerText = languageTexts[selectedLanguage]["hertz"];
+          document.getElementById("worldwideServiceTitle").innerText = languageTexts[selectedLanguage]["worldwideService"]["title"];
+          document.getElementById("worldwideServiceDesc").innerText = languageTexts[selectedLanguage]["worldwideService"]["description"];
+          document.getElementById("onTimeDeliveryTitle").innerText = languageTexts[selectedLanguage]["onTimeDelivery"]["title"];
+          document.getElementById("onTimeDeliveryDesc").innerText = languageTexts[selectedLanguage]["onTimeDelivery"]["description"];
+          document.getElementById("telephoneSupportTitle").innerText = languageTexts[selectedLanguage]["telephoneSupport"]["title"];
+          document.getElementById("telephoneSupportDesc").innerText = languageTexts[selectedLanguage]["telephoneSupport"]["description"];
+        }
+      </script>
+
+<div class="bolge">
+    <img class="img-fluid bolge-img" src="img/yacht.png" alt="">
+    <div class="yazi">
+      <p id="poor">Buraya istediğiniz metni ekleyin</p>
+    </div>
+  </div>
+
+  <script>
+    var languageTexts = {
+      "en": {
+        "poor": "Add your desired text here"
+      },
+      "tr": {
+        "poor": "Buraya istediğiniz metni ekleyin"
+      },
+      "fr": {
+        "poor": "Ajoutez votre texte souhaité ici"
+      }
+    };
+
+    var selectedLanguage = "en";
+
+    function changeLanguage(lang) {
+      selectedLanguage = lang;
+      updateTexts();
+    }
+
+    function updateTexts() {
+      document.getElementById("poor").innerText = languageTexts[selectedLanguage]["poor"];
+    }
+  </script>
+
+
+  
+      <div class="bg-white py-10 sm:py-8 lg:py-12" style="margin-top: 150px;">
+        <div class="container-lg text-center wow fadeInUp px-4 md:px-8">
+      
+          <p id="introducing" class="mb-2 text-center font-bold text-uppercase text-indigo-500 md-3 lg:text-lg">Tanıtım</p>
+      
+          <h2 id="revolutionaryWay" class="mb-4 text-center text-4xl font-bold text-gray-900 md-6 lg:text-4xl">Web'i inşa etmenin devrim niteliğinde bir yolu</h2>
+          <img src="img/logo.png" alt="" class="img-fluid mb-4 mx-auto max-w-md rounded-lg shadow-lg" id="imageAltText" />
+      
+          <p id="fillerText" class="mx-auto max-w-md text-center text-gray-500 md:text-lg">Bu, basit bir doldurma metni bölümüdür, aynı zamanda yer tutma metni olarak da bilinir. Gerçek bir yazılı metnin bazı özelliklerini paylaşır, ancak rastgele veya başka türlü üretilmiştir.</p>
+        </div>
+      </div>
+
+      <script>
+        var languageTexts = {
+          "en": {
+            "introducing": "Introducing",
+            "revolutionaryWay": "Revolutionary way to build the web",
+            "imageAltText": "Image Alt Text",
+            "fillerText": "This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of real written text but is random or otherwise generated."
+          },
+          "tr": {
+            "introducing": "Tanıtım",
+            "revolutionaryWay": "Web'i inşa etmenin devrim niteliğinde bir yolu",
+            "imageAltText": "Resim Alternatif Metni",
+            "fillerText": "Bu, basit bir doldurma metni bölümüdür, aynı zamanda yer tutma metni olarak da bilinir. Gerçek bir yazılı metnin bazı özelliklerini paylaşır, ancak rastgele veya başka türlü üretilmiştir."
+          },
+          "fr": {
+            "introducing": "Présentation",
+            "revolutionaryWay": "Une façon révolutionnaire de construire le web",
+            "imageAltText": "Texte alternatif de l'image",
+            "fillerText": "Il s'agit d'une section d'un texte de remplissage simple, également appelé texte de substitution. Il partage certaines caractéristiques d'un vrai texte écrit mais est généré de manière aléatoire ou autrement."
+          }
+        };
+    
+        var selectedLanguage = "en";
+    
+        function changeLanguage(lang) {
+          selectedLanguage = lang;
+          updateTexts();
+        }
+    
+        function updateTexts() {
+          document.getElementById("introducing").innerText = languageTexts[selectedLanguage]["introducing"];
+          document.getElementById("revolutionaryWay").innerText = languageTexts[selectedLanguage]["revolutionaryWay"];
+          document.getElementById("imageAltText").alt = languageTexts[selectedLanguage]["imageAltText"];
+          document.getElementById("fillerText").innerText = languageTexts[selectedLanguage]["fillerText"];
+        }
+      </script>
+    
+    
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5" style="margin-top: 150px;">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class=" text-uppercase" style="color: #51ADE5;">Our Team</h6>
+                <h1 class="mb-5">Expert Team Members</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        </div>
+                        <h5 class="mb-0">Full Name</h5>
+                        <p>Designation</p>
+                        <div class="btn-slide mt-1">
+                            <i class="fa fa-share" style="background-color: #2B3892;"></i>
+                            <span>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        </div>
+                        <h5 class="mb-0">Full Name</h5>
+                        <p>Designation</p>
+                        <div class="btn-slide mt-1">
+                            <i class="fa fa-share" style="background-color: #2B3892;"></i>
+                            <span>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        </div>
+                        <h5 class="mb-0">Full Name</h5>
+                        <p>Designation</p>
+                        <div class="btn-slide mt-1">
+                            <i class="fa fa-share" style="background-color: #2B3892;"></i>
+                            <span>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="team-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                        </div>
+                        <h5 class="mb-0">Full Name</h5>
+                        <p>Designation</p>
+                        <div class="btn-slide mt-1">
+                            <i class="fa fa-share"></i>
+                            <span>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="text-center">
+                <h6 class=" text-uppercase" style="color: #51ADE5;">Testimonial</h6>
+                <h1 class="mb-0">Our Clients Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item p-4 my-5">
+                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                    <div class="d-flex align-items-end mb-4">
+                        <img class="img-fluid flex-shrink-0" src="img/testimonial-1.jpg"
+                            style="width: 80px; height: 80px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Client Name</h5>
+                            <p class="m-0">Profession</p>
+                        </div>
+                    </div>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
+                        Clita erat ipsum et lorem et sit.</p>
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                    <div class="d-flex align-items-end mb-4">
+                        <img class="img-fluid flex-shrink-0" src="img/testimonial-2.jpg"
+                            style="width: 80px; height: 80px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Client Name</h5>
+                            <p class="m-0">Profession</p>
+                        </div>
+                    </div>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
+                        Clita erat ipsum et lorem et sit.</p>
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                    <div class="d-flex align-items-end mb-4">
+                        <img class="img-fluid flex-shrink-0" src="img/testimonial-3.jpg"
+                            style="width: 80px; height: 80px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Client Name</h5>
+                            <p class="m-0">Profession</p>
+                        </div>
+                    </div>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
+                        Clita erat ipsum et lorem et sit.</p>
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                    <div class="d-flex align-items-end mb-4">
+                        <img class="img-fluid flex-shrink-0" src="img/testimonial-4.jpg"
+                            style="width: 80px; height: 80px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Client Name</h5>
+                            <p class="m-0">Profession</p>
+                        </div>
+                    </div>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
+                        Clita erat ipsum et lorem et sit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn  " data-wow-delay="0.1s"
+        style="margin-top: 6rem;">
+        <div class="container py-5 ">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Address</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Services</h4>
+                    <a class="btn btn-link" href="">Air Freight</a>
+                    <a class="btn btn-link" href="">Sea Freight</a>
+                    <a class="btn btn-link" href="">Road Freight</a>
+                    <a class="btn btn-link" href="">Logistic Solutions</a>
+                    <a class="btn btn-link" href="">Industry solutions</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        </br>Distributed By <a class="border-bottom" href="https://themewagon.com"
+                            target="_blank">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg  btn-lg-square  back-to-top"
+        style="background-color: #2B3892; color: #51ADE5; border-radius: 45px;"><i class="bi bi-arrow-up "></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
